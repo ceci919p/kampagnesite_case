@@ -12,3 +12,11 @@
   --font-display: "Tenor Sans", sans-serif;
   --font-paragraph: "Open Sans", sans-serif;
 }
+
+/*----general rules-----*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----navigation------*/
