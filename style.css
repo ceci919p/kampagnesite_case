@@ -60,7 +60,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.subheading {
   margin: 3rem 0 1.38rem;
   font-family: var(--font-display);
   font-weight: 700;
@@ -80,9 +81,17 @@ h1 {
 
 h2 {
   font-size: 2.441rem;
+  margin-block-start: 2rem;
 }
 
 h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subheading {
   font-size: 1.5rem;
   margin: 0;
   font-weight: 300;
@@ -102,6 +111,12 @@ h5 {
   font-weight: 700;
   margin-block-start: 5rem;
   margin-block-end: 0.5rem;
+}
+
+.smaller_text {
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin-block-start: 0.5rem;
 }
 
 /*----------navigation----------*/
@@ -190,9 +205,33 @@ h5 {
   background-color: var(--color-lighter);
 }
 
-/*-------header-------*/
+/*-------Sections-------*/
 
-header {
+.header_wrapper,
+.intro_wrapper,
+.contact_wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1000px) auto;
+  align-items: center; /* left and right */
+  justify-content: center; /* up and down */
+}
+
+.header_wrapper {
+  background-color: var(--color-dark);
+}
+
+.intro_wrapper {
+  background-color: var(--color-lighter);
+  margin-block: 2rem;
+}
+
+.contact_wrapper {
+  background-color: var(--color-accent);
+}
+
+header,
+#intro,
+#contact {
   grid-column: 2/3;
   margin-block-start: 3rem;
   margin-block-end: 0rem;
@@ -203,21 +242,16 @@ header {
   justify-items: center;
 }
 
-header > * {
+header > *,
+#contact > * {
   color: white;
 }
+
+/*-----header section------*/
 
 .zeppeliner {
   max-width: 60vw;
   margin-block-end: 3rem;
-}
-
-.header_wrapper {
-  display: grid;
-  grid-template-columns: auto minmax(0, 800px) auto;
-  background-color: var(--color-dark);
-  align-items: center; /* left and right */
-  justify-content: center; /* up and down */
 }
 
 .circle_wrapper {
@@ -251,6 +285,40 @@ header > * {
 
 .cta_link {
   text-decoration: none;
+}
+
+/*-----intro section------*/
+
+#intro {
+  margin-block-start: 1.5rem;
+}
+
+.icon {
+  max-width: 60vw;
+  margin: auto;
+  margin-block-start: 3rem;
+}
+
+.proposition_text {
+  margin-block-start: 1.2rem;
+}
+
+/*-----contact section------*/
+
+form {
+  margin-block-start: 2rem;
+}
+
+.form_control {
+  display: grid;
+  grid: auto auto / 1fr max-content;
+  gap: 5px 0;
+  font-weight: 600;
+}
+
+.prize_icon {
+  max-width: 3.5vw;
+  margin-block-start: 1rem;
 }
 
 /*--------rules for Ipad--------*/
@@ -305,23 +373,8 @@ header > * {
     margin-bottom: 1rem;
     font-weight: 300;
     text-align: center;
-    max-width: 55ch;
+    max-width: 70ch;
   }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin: 3rem 0 1.38rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    line-height: 1.3;
-  }
-
-  /*   h1 {
-    font-size: 2.6rem;
-  } */
 
   h1 {
     margin-top: 0;
@@ -331,9 +384,10 @@ header > * {
 
   h2 {
     font-size: 2.441rem;
+    margin-block-end: 0.3rem;
   }
 
-  h3 {
+  .subheading {
     font-size: 1.953rem;
     margin: 0;
     font-weight: 300;
@@ -347,6 +401,16 @@ header > * {
 
   h5 {
     font-size: 1.25rem;
+  }
+
+  .article_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .icon {
+    max-width: 16vw;
   }
 }
 
