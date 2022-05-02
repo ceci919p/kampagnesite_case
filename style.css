@@ -1,0 +1,14 @@
+/*---color variables----*/
+
+:root {
+  /*----------colors----------*/
+  --color-darker: #252526;
+  --color-dark: #8c8c8c;
+  --color-light: #f2f2f2;
+  --color-lighter: #fff;
+  --color-accent: #f25757;
+
+  /*----------fonts----------*/
+  --font-display: "Tenor Sans", sans-serif;
+  --font-paragraph: "Open Sans", sans-serif;
+}
