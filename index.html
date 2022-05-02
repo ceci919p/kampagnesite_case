@@ -6,9 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/logo.svg" />
-    <title>Pentia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kampagnesite</title>
   </head>
   <body>
+    <nav class="navbar">
+      <a class="logo" href="index.html"
+        ><img class="logo" src="assets/logo2.svg" alt="logo"
+      /></a>
+
+      <ul class="nav_menu">
+        <li class="nav_item">
+          <a href="#header" class="nav_link">HVEM VI ER</a>
+        </li>
+        <li class="nav_item">
+          <a href="#intro" class="nav_link">HVAD VI KAN TILBYDE</a>
+        </li>
+        <li class="nav_item">
+          <a href="#contact" class="nav_link">FÅ GODE RÅD</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="header_wrapper">
+        <header id="header">
+          <img
+            class="zeppeliner"
+            src="assets/zeppeliner2.svg"
+            alt="picture of zeppeliner"
+          />
+          <h1>Digital transformation</h1>
+          <h3>Rådgivning. Implementering. Resultater</h3>
+          <p>
+            Hvordan bliver din virksomhed en digital vinder i fremtiden? <br />
+            Hvilke tiltag skal der til strategisk og taktisk for at dreje
+            forretningen i den rigtige retning? Hvilke elementer indeholder en
+            succesfuld digital transformation? Vi har svarene. Pentia kan hjælpe
+            dig på hele rejsen fra strategisk rådgivning til implementering.
+          </p>
+
+          <a class="cta_link" href="#intro">
+            <p class="small_text">Start din rejse her</p>
+
+            <div class="circle_wrapper">
+              <div class="circle small"></div>
+              <div class="circle medium"></div>
+              <div class="circle big"></div>
+            </div>
+          </a>
+        </header>
+      </div>
+
+      <section id="intro"></section>
+      <section id="contact"></section>
+
+      <div class="edge"></div>
+    </main>
+
     <script src="scripts/burgermenu.js"></script>
   </body>
 </html>
