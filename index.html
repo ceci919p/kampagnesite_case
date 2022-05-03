@@ -16,10 +16,6 @@
   </head>
   <body>
     <nav class="navbar">
-      <a class="logo" href="index.html"
-        ><img class="logo" src="assets/logo2.svg" alt="logo"
-      /></a>
-
       <ul class="nav_menu">
         <li class="nav_item">
           <a href="#header" class="nav_link">HVEM VI ER</a>
@@ -31,6 +27,10 @@
           <a href="#contact" class="nav_link">FÅ GODE RÅD</a>
         </li>
       </ul>
+
+      <a class="logo" href="index.html"
+        ><img class="logo" src="assets/logo2.svg" alt="logo"
+      /></a>
 
       <div class="hamburger">
         <span class="bar"></span>
@@ -58,7 +58,7 @@
           </p>
 
           <a class="cta_link" href="#intro">
-            <p class="small_text">Start din rejse her</p>
+            <h5>Start din rejse her</h5>
 
             <div class="circle_wrapper">
               <div class="circle small"></div>
@@ -120,55 +120,60 @@
           </p>
           <form action="contact">
             <div class="form_control">
-              <label for="full-name">Navn</label>
-              <input
-                id="full-name"
-                name="fname"
-                type="text"
-                inputmode="text"
-                enterkeyhint="enter"
-                required
-              />
+              <div class="name_column">
+                <label for="full-name">Navn</label>
+                <input
+                  id="full-name"
+                  name="fname"
+                  type="text"
+                  inputmode="text"
+                  enterkeyhint="enter"
+                  required
+                />
+              </div>
 
-              <label for="mobile">Mobil</label>
-              <input
-                id="mobile"
-                name="mobile"
-                type="tel"
-                inputmode="tel"
-                enterkeyhint="enter"
-                required
-              />
+              <div class="left_column">
+                <label for="mobile">Mobil</label>
+                <input
+                  id="mobile"
+                  name="mobile"
+                  type="tel"
+                  inputmode="tel"
+                  enterkeyhint="enter"
+                  required
+                />
 
-              <label for="email">E-mail</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                inputmode="email"
-                enterkeyhint="enter"
-              />
+                <label for="zipcode">Postnr.</label>
+                <input
+                  id="zipcode"
+                  name="zipcode"
+                  type="number"
+                  inputmode="numeric"
+                  enterkeyhint="enter"
+                />
+              </div>
 
-              <label for="zipcode">Postnr.</label>
-              <input
-                id="zipcode"
-                name="zipcode"
-                type="number"
-                inputmode="numeric"
-                enterkeyhint="enter"
-              />
+              <div class="right_column">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  inputmode="email"
+                  enterkeyhint="enter"
+                />
 
-              <label for="city">By</label>
-              <input
-                id="city"
-                name="city"
-                type="text"
-                inputmode="text"
-                enterkeyhint="enter"
-              />
-
-              <button type="submit">Ring mig op</button>
+                <label for="city">By</label>
+                <input
+                  id="city"
+                  name="city"
+                  type="text"
+                  inputmode="text"
+                  enterkeyhint="enter"
+                />
+              </div>
             </div>
+            <button type="submit">Ring mig op</button>
           </form>
 
           <img
