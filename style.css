@@ -75,7 +75,7 @@ h5 .subheading {
 
 h1 {
   margin-block-start: 0;
-  font-size: 2.85rem;
+  font-size: 2.7rem;
   margin-block-end: 0.5rem;
 }
 
@@ -96,7 +96,7 @@ h4 {
 }
 
 h5 {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   margin-block-start: 5rem;
   margin-block-end: 0.5rem;
 }
@@ -400,6 +400,11 @@ input[type="number"] {
 
   h2 {
     margin-block-end: 0.3rem;
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 0.75rem;
   }
 
   .subheading {
@@ -409,6 +414,12 @@ input[type="number"] {
   }
 
   /*layout*/
+
+  header,
+  #intro,
+  #contact {
+    padding-inline: 4rem;
+  }
 
   main {
     margin-left: 93px;
@@ -490,6 +501,7 @@ input[type="number"] {
     gap: 0.5rem 2rem;
     margin: 1rem;
     margin-block-end: 3rem;
+    width: 70vw;
   }
 
   .name_column {
@@ -513,10 +525,35 @@ input[type="number"] {
   .form_control {
     width: 40vw;
   }
+
+  header,
+  #intro,
+  #contact {
+    padding-inline: 2rem;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1366px) {
+  .form_control {
+    width: 50vw;
+  }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1536px) {
+  .form_control {
+    width: 45vw;
+  }
+
+  .contact_wrapper {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1000px) auto;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1920px) {
 }
