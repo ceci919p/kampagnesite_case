@@ -27,8 +27,6 @@ body {
 
   font-weight: 300;
   line-height: 1.75;
-
-  /*   overflow: hidden; */
 }
 
 * {
@@ -58,7 +56,6 @@ p {
   font-weight: 300;
   text-align: center;
   margin-block-start: 2rem;
-  /*   max-width: 30ch; */
 }
 
 h1,
@@ -217,8 +214,8 @@ button {
 .intro_wrapper {
   display: grid;
   grid-template-columns: auto minmax(0, 1000px) auto;
-  align-items: center; /* left and right */
-  justify-content: center; /* up and down */
+  align-items: center;
+  justify-content: center;
 }
 
 .header_wrapper {
@@ -246,7 +243,6 @@ header,
   margin-block-end: 0rem;
   padding-inline: 2rem;
   padding-block: 2rem;
-
   display: grid;
   justify-items: center;
 }
@@ -420,7 +416,6 @@ input[type="number"] {
 
   .subheading,
   .contact_subheading {
-    /*  font-size: 1.953rem; */
     margin-block-end: 0.5rem;
     font-size: 1.45rem;
   }
@@ -570,7 +565,4 @@ input[type="number"] {
     grid-template-columns: auto minmax(0, 1000px) auto;
     justify-items: center;
   }
-}
-
-@media (min-width: 1920px) {
 }
